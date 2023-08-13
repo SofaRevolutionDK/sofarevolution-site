@@ -1,0 +1,28 @@
+.header {
+  width: 100vw;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  z-index: 100;
+}
+
+.header > .logo.text {
+  margin-top: 25px;
+  width: auto;
+  max-height: 50px;
+  margin-left: 2rem;
+}
+
+.logo.text > h3 {
+  text-transform: lowercase;
+  font-variation-settings: "wght" 500; 
+  font-size: 2.25rem;
+}
+
+.logo.text span {
+  font-size: 18px;
+  text-transform: lowercase;
+  font-variation-settings: "wght" 100;
+}

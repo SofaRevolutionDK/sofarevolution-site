@@ -1,0 +1,12 @@
+:root {
+  --body-bg: rgba(20, 20, 20, 1);
+  --text-prim: rgba(240, 240, 240, 1);
+  --text-sec: rgba(190, 190, 190, 1);
+  --blue: rgba(2, 151, 218, 1);
+  --purple: rgba(255, 0, 98);
+  --font-family: "halyard-display-variable", sans-serif;
+  --wght: "wght" 250;
+  --trans: all 0.25s cubic-bezier(.09,.6,.55,.97);
+  --cubic: cubic-bezier(.09,.6,.55,.97);
+}
+

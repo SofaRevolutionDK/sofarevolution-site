@@ -1,0 +1,152 @@
+section.hero {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - 100px);
+  overflow: hidden;
+  z-index: 1;
+}
+
+#percentdisplay {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 2rem;
+  text-align: right;
+  z-index: 50;
+}
+
+#scrollindicator {
+  position: absolute;
+  width: 100vw;
+  height: 150px;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 50;
+}
+
+.indicator-wrap {
+  width: 70px;
+  height: 135px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.indicator-wrap > svg {
+  width: 42px;
+  margin: 0 auto;
+}
+
+.scroll-text {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.scroll-text > span {
+  text-transform: none;
+  letter-spacing: 1px;
+  color: var(--text-prim);
+  transform: translateY(0);
+  animation: 2s linear 0s infinite alternate top;
+}
+
+#lgtri {
+  fill: var(--purple);
+  stroke: var(--purple);
+  transform: translateY(0);
+  animation: 2s linear 0s infinite alternate indicator;
+}
+
+#midtri {
+  fill: var(--text-prim);
+  stroke: var(--text-prim);
+  transform: rotate(0deg);
+  animation: 2s linear 0s infinite alternate mid;
+}
+
+#toptri {
+  fill: var(--text-prim);
+  stroke: var(--text-prim);
+  transform: translateY(0);
+  animation: 2s linear 0s infinite alternate top;
+}
+
+#pwrap, #percent {
+  font-size: 22px;
+  color: var(--text-prim);
+  line-height: 1;
+  font-variation-settings: 'wght' 500;
+}
+
+canvas#display {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.scroller {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110vw;
+  height: calc(100vh - 100px);
+  background: transparent;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 20;
+}
+
+
+#scrollinner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 900vh;
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,0.2) 0%, rgba(0,212,255,1) 100%);
+  z-index: 20;
+}
+
+@keyframes indicator {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(6px);
+    opacity: 0.33;
+  }
+}
+
+@keyframes mid {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 0.33;
+  }
+}
+
+@keyframes top {
+  from {
+    transform: translateY(0px);
+    letter-spacing: 1px;
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(0px);
+    letter-spacing: 2px;
+    opacity: 0.25;
+  }
+}

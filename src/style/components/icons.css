@@ -1,0 +1,37 @@
+.icon {
+  max-height: 35px;
+  width: auto;
+  max-width: 35px;
+  margin-right: 1rem;
+}
+
+.icon > img {
+  max-height: 35px;
+  max-width: 35px;
+  object-fit: contain;
+}
+
+img.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.icon > svg, .icon > a > svg {
+  path: #FFFFFF;
+  fill: #FFFFFF;
+}
+
+@media screen and (min-width: 320px) {
+  .icon.small {
+    max-height: 15px;
+    width: auto;
+    max-width: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .icon.small {
+    max-height: 20px;
+    width: auto;
+    max-width: 20px;
+  }
+}

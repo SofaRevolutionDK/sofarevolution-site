@@ -1,0 +1,40 @@
+.cta-content {
+  width: auto;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.cta-content > #sb-trigger-content {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: justify-between;
+}
+
+@media screen and (min-width: 320px) {
+  .cta-text > p {
+    text-transform: uppercase;
+    font-variation-settings: 'wght' 150;
+    line-height: 1.1;
+    font-size: 18px;
+    margin-left: -10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cta-text > p {
+    text-transform: uppercase;
+    font-variation-settings: 'wght' 150;
+    line-height: 1.3;
+    font-size: 18px;
+    margin-left: -10px;
+  }
+}
+
